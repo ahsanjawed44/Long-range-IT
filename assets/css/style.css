@@ -350,15 +350,11 @@ h6 {
 }
 
 #hero .container {
-  text-align: center;
-  padding-top: 50px;
+  text-align: left;
+  padding-top: 0px;
 }
 
-@media (max-width: 992px) {
-  #hero .container {
-    padding-top: 0;
-  }
-}
+
 
 #hero h1 {
   margin: 0;
@@ -404,6 +400,8 @@ h6 {
   #hero {
     height: 100vh;
   }
+  #hero .container {
+    text-align: center;}
 
   #hero h1 {
     font-size: 28px;
