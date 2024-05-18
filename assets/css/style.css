@@ -1,14 +1,4 @@
-/**
-* Template Name: Baker
-* Template URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -37,7 +27,8 @@ h6 {
   --w: whitesmoke;
   --b: black;
   --primary: #C10706;
-  --secondary: #000d1c;
+  /* --secondary: #000d1c; */
+  --secondary: #00060c;
   --text-dark: #4f5050;
   --text-light:white;
 }
@@ -168,6 +159,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
+  font-weight: 700;
   color: var(--primary);
 }
 
@@ -622,6 +614,14 @@ height: auto;
   font-weight: 500;
 }
 
+@media (max-width: 768px){
+  .content
+  {
+    align-items: center;
+    text-align: center;
+  }
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -718,7 +718,7 @@ height: auto;
 }
 
 .support .content h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem,2.5vw,3rem);
   font-weight: 700;
   color: var(--text-light);
 }
@@ -1119,4 +1119,84 @@ img.img-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 768px){
+  .footer-bottom
+{
+  flex-direction: column;
+
+}
+}
+
+
+
+/* terms page */
+.inner-body {
+  background: var(--w);
+  padding: 40px 60px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+h1.main-head {
+  font-size:clamp(22px,2vw,35px) ;
+  font-weight: 800;
+  border-left: solid 8px var(--primary);
+  padding-left: 9px;
+  margin-bottom: 20px;
+}
+
+h3.sub-head {
+  font-size:clamp(18px,1.5vw,27px) ;
+  font-weight: 700;
+  color: var(--primary);
+}
+.terms-data
+{
+  font-size: clamp(14px,1vw,18px);
+}
+.inner-body ol li{
+  font-size: clamp(14px,1vw,28px);
+  margin: 10px 0;
+  padding-left:10px ;
+}
+.outer-list>li::marker{
+  color: var(--primary);
+  font-weight: 800;
+  margin-right: 10px;
+
+}
+
+.inner-list {
+  list-style-type: lower-alpha;
+}
+.inner-list>li::marker
+{
+  color: var(--text-dark);
+  font-weight: 800;
+}
+
+h4.list-head {
+  font-size: clamp(16px,1vw,20px);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.dot-list ul li::marker {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.dot-list ul li{
+  padding-left: 10px;
+}
+th{
+  color: var(--text-light) !important;
+  background-color: var(--primary) !important;
+}
+@media (max-width: 768px){
+  .inner-body {
+    padding: 40px 30px;}
+
 }
