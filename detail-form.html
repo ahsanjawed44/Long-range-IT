@@ -11,10 +11,12 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  
+
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,11 +42,10 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="about.html">About</a></li>
           <li><a class="nav-link scrollto" href="services.html">Services</a></li>
           <li><a class="nav-link scrollto " href="client.html">Clients</a></li>
-          <!-- <li><a class="nav-link scrollto" href="standards.html">Tech Standards</a></li> -->
           <li><a class="nav-link scrollto" href="support.html">Support</a></li>
           <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
         </ul>
@@ -59,17 +60,54 @@
     <!-- ======= Breadcrumbs ======= -->
     <section id="inner-hero" class="d-flex align-items-center justify-content-center">
       <div class="container position-relative">
-        <h1>Single
-          <span class="pointer">Page</span></h1>
+        <h1>Detail
+          <span class="pointer">Form</span>
+        </h1>
         <h2></h2>
       </div>
     </section><!-- End Hero -->
 
-    <section class="inner-page">
+    <section id="contact" class="contact">
       <div class="container">
-        <p>
-          Example inner page template
-        </p>
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+
+          <div class="section-title">
+            <h2>Get Started</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+              consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+              sit
+              in iste officiis commodi quidem hic quas.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 form-group mt-3">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Device Count" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 ">
+              <input type="email" class="form-control" name="email" id="email" placeholder="User Count" required>
+            </div>
+          </div>
+
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
       </div>
     </section>
 
@@ -85,11 +123,9 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <a href="index.html" class="logo-footer"><img src="assets/img/logo.png" alt="" class="img-footer"></a>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Long Range IT specializes in enhancing technology efficiency and security, providing comprehensive
+              solutions available 24/7. Our proactive monitoring ensures a reliable infrastructure, bridging the gap
+              between current capabilities and future needs
             </p>
           </div>
 
@@ -150,7 +186,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
