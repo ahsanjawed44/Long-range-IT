@@ -1198,3 +1198,18 @@ th{
     padding: 40px 30px;}
 
 }
+label.subhead {
+  font-size: 19px;
+  font-weight: 600;
+}
+.form-check-input {
+  border: 1px solid var(--primary);
+  margin-right: 10px;
+  padding: 0px;
+  border-radius: 20px !important;
+}
+.form-check-input:checked
+{
+  background-color:var(--primary);
+  border-color: var(--primary);
+}
