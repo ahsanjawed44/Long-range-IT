@@ -821,7 +821,7 @@ height: auto;
 {
   width: 100%;
   height: auto;
-  background: url("../img/contact-bg.png");
+  background:rgba(255, 255, 255, 0.5) url("../img/contact-bg.jpg");
   background-size: cover;
   position: relative;
 }
@@ -833,6 +833,7 @@ height: auto;
 .contact .info-box {
   color: #444444;
   text-align: center;
+  background-color: #edededde;
   box-shadow: 0 0 20px rgba(65, 76, 100, 0.05);
   padding: 20px 0 30px 0;
 }
@@ -860,8 +861,9 @@ height: auto;
 }
 
 .contact .php-email-form {
+  background-color:#edededde ;
   box-shadow: 0 0 20px rgba(65, 76, 100, 0.05);
-  padding: 30px;
+  padding: 39px;
 }
 
 .contact .php-email-form .error-message {
