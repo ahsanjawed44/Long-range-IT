@@ -1147,14 +1147,22 @@ h1.main-head {
   margin-bottom: 20px;
 }
 
-h3.sub-head {
-  font-size:clamp(18px,1.5vw,27px) ;
+.sub-head {
+  font-size:clamp(18px,1.5vw,22px) ;
   font-weight: 700;
   color: var(--primary);
+  display: block;
+  /* border-bottom: 1px solid var(--secondary); */
 }
 .terms-data
 {
   font-size: clamp(14px,1vw,18px);
+  margin-left: 20px;
+}
+.def
+{
+  font-weight: 700;
+  border-bottom: 1px solid var(--primary);
 }
 .inner-body ol li{
   font-size: clamp(14px,1vw,28px);
@@ -1164,7 +1172,7 @@ h3.sub-head {
 .outer-list>li::marker{
   color: var(--primary);
   font-weight: 800;
-  margin-right: 10px;
+  margin:0 10px;
 
 }
 
@@ -1175,6 +1183,7 @@ h3.sub-head {
 {
   color: var(--text-dark);
   font-weight: 800;
+  margin:0 10px;
 }
 
 h4.list-head {
